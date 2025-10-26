@@ -1,0 +1,99 @@
+🏥 Medical Charges Prediction
+
+This repository contains the code and analysis for predicting medical insurance charges based on various factors such as age, sex, BMI, number of children, smoking status, and region.
+
+📘 Project Overview
+
+The objective of this project is to explore, clean, and analyze the insurance dataset and then train a Linear Regression model to predict individual medical charges.
+
+🔑 Key Steps
+
+Data Loading & Exploration
+
+Loaded the dataset (insurance.csv)
+
+Reviewed data types, structure, and summary statistics.
+
+Data Cleaning
+
+Verified no missing values were present.
+
+Feature Engineering
+
+Applied one-hot encoding for categorical features (sex, smoker, region).
+
+Scaled numerical features (age, bmi, children) using StandardScaler.
+
+Exploratory Data Analysis (EDA)
+
+Visualized distributions and feature relationships.
+
+Identified key correlations influencing medical charges.
+
+Model Training
+
+Split the data into training and testing sets.
+
+Trained a Linear Regression model.
+
+Model Evaluation
+
+Evaluated using MAE, MSE, and R² metrics.
+
+Visualization of Results
+
+Created visual comparisons of Actual vs. Predicted Charges.
+
+Analyzed residuals to assess model performance.
+
+📊 Key Findings
+
+Dataset includes 1338 records of individuals with various demographic and health factors.
+
+No missing values detected.
+
+Categorical features successfully encoded and numerical features scaled.
+
+EDA Insights:
+
+Medical charges show a right-skewed distribution (majority have low costs, few have very high costs).
+
+Smoker status is the strongest predictor of higher medical charges.
+
+Age and BMI show positive correlation with medical charges.
+
+Model Performance:
+
+Achieved R² ≈ 0.78, explaining ~78% of variance in medical costs.
+
+Good prediction performance for average cases, but less accurate for high-charge outliers.
+
+Residual analysis suggested mild heteroscedasticity.
+
+📂 Repository Structure
+📦 Medical-Charges-Prediction
+├── 📄 insurance.csv                    # Dataset
+├── 📓 Linear_Regression_Analysis.ipynb # Jupyter Notebook (EDA + Model)
+└── 📘 README.md                        # Project Documentation
+
+🧠 Tech Stack
+
+Language: Python
+
+Libraries: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
+
+Model: Linear Regression
+
+🎯 Future Improvements
+
+Explore advanced regression models (e.g., Ridge, Lasso, Random Forest).
+
+Handle heteroscedasticity using log transformation or weighted regression.
+
+Improve feature scaling for better model generalization.
+
+👨‍💻 Author
+
+sathiya
+Freelance Data Analyst & Machine Learning Enthusiast
+Exploring data through visualization and machine learning to build real-world insights.
